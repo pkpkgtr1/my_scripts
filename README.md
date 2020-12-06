@@ -4,6 +4,8 @@
 > 低调使用，请勿到处宣传  
 
 
+### 天天领现金入口
+https://huodong.fanli.com/webapp/mchannel_download?mc=674&endTime=1607788800&link=ifanli%3A%2F%2Fm.fanli.com%2Fapp%2Fshow%2Fweb%3Furl%3Dhttps%253A%252F%252Fhuodong.fanli.com%252Fh5%252FFanlishare20201212%253Fspm%253Dpage_name.h5.pty-jljhd~id-vxshare~77444%26wb%3D2%26nologin%3D0&channelCode=20201212_vxshare
 
 ### 特别声明:
 
