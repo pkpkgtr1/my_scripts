@@ -9,11 +9,11 @@ import os,time
 
 
 ###################################################
-# 对应方案1: 下载到本地,需要此处填写
-cookies1 = {'cookie':''}
-cookies2 = {'cookie':''}
+# 对应方案1: 下载到本地,需要此处填写  注意cookie以json形式填写
+cookies1 = {}
+cookies2 = {}
 
-cookiesList = [cookies1,cookies2 ]   # 多账号准备
+cookiesList = [cookies1,]   # 多账号准备
 
 '''
 # 通知服务
