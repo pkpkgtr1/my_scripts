@@ -48,7 +48,7 @@ def flwhbtask(cookies):
         'Accept-Encoding': 'gzip, deflate, br'
     }
     try:
-        response = requests.get('https://huodong.fanli.com/h5/Fanlishare20201212/ajaxInit/ajaxDoTask76728', headers=headers, cookies=cookies)
+        response = requests.get('https://huodong.fanli.com/h5/Fanlishare20201212/ajaxInit', headers=headers, cookies=cookies)
     except:
         print("网络请求异常,直接跳过")
         return

@@ -7,6 +7,13 @@
 ### 天天领现金入口
 https://huodong.fanli.com/webapp/mchannel_download?mc=674&endTime=1607788800&link=ifanli%3A%2F%2Fm.fanli.com%2Fapp%2Fshow%2Fweb%3Furl%3Dhttps%253A%252F%252Fhuodong.fanli.com%252Fh5%252FFanlishare20201212%253Fspm%253Dpage_name.h5.pty-jljhd~id-vxshare~77444%26wb%3D2%26nologin%3D0&channelCode=20201212_vxshare
 
+
+### cookie抓取:
+- 安卓使用HttpCanary工具
+- 搜索ajaxInit
+
+
+
 ### 特别声明:
 
 - 本仓库发布的脚本及其中涉及的任何解锁和解密分析脚本，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断。
