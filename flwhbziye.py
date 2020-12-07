@@ -97,7 +97,38 @@ def flwhblh(cookies):
 
 
 
+#提现
+def flwhbtx(cookies):
+    print("\n【微信提现】")
+    headers = {
+        'Host': 'huodong.fanli.com',
+        'Connection': 'keep-alive',
+        'X-Requested-With': 'XMLHttpRequest',
+        'Sec-Fetch-Site': 'same-origin',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Dest': 'empty',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'Connection': 'keep-alive',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 9; LM-G710N Build/PKQ1.181105.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Fanli/7.16.7.2 (ID:2-1711358-66699812379993-19-0; WVC:WV; SCR:1440*3120-4.0)',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Referer': 'https://huodong.fanli.com/h5/Fanlishare20201212?spm=page_name.h5.pty-jljhd~id-vxshare~77444&devid=66699812379993&c_aver=1.0&c_src=2&c_v=7.16.7.2&abtest=61747_c-26_d-2036_b-320_a-154_b-316_b-404_b-32_i-124_b-210_c-84_b-22_b-8_c-140_b-22_a-708_b-104_a-12_a-1008_b-146_b-4_b-2_b-28_a-314_b-148_b-90_c-16_a-72_a-32_b-86_b-12_b-6_b-16_b-2_b-20_b-8_a-24_a-2_a-765d&c_nt=wifi&mc=19&ci=%7B%5C%22ud%5C%22%3A%5C%22from%3Ddb%26local%3Dbrick_hp_c_bar%26id%3D917%26id_type%3Dbar%26abtest_group%3D%26abtest_activity%3D%26dpt%3D1%252F5%5C%22%7D',
+        'Accept-Encoding': 'gzip, deflate, br'
+    }
+    try:
+        response = requests.get('https://huodong.fanli.com/h5/Fanlishare20201212/ajaxExchangeCash', headers=headers, cookies=cookies)
+    except:
+        print("网络请求异常,直接跳过")
+        return
+    data = response.json()["data"]
+    print(data)
+    '''
+    if (data['status'] == 1):
+        print('【余额提现】🎉:提现成功,请到公众号领取'+'\n')
 
+    else:
+        print('【余额提现】✖️:'+ data['info']+'\n') 
+        pass
+'''
 
     
 
@@ -174,7 +205,7 @@ if __name__ == "__main__":
        for x in numbers:
             flwhblh(cookie)
             time.sleep(5)
-
+    flwhbtx(cookie)
       
 '''
  while a < 5 :
