@@ -52,13 +52,18 @@ def flwhbtask(cookies):
     except:
         print("网络请求异常,直接跳过")
         return
+    print(requests.utils.dict_from_cookiejar(response.cookies))
+
     data = response.json()["data"]
 
+    if response.json()["status"] ==1:
+            print('【收益总计】🎉:'+str(data['user_total_money'])+'元'+'\n')
+            print('【剩余礼盒】🎉:'+ str(data['remain_num_76728']) + '个' +'\n')
+            return (data['remain_num_76728'])
+            print('【账户余额】🎉:'+str(data['user_current_money'])+'\n')
+    else:
+            print('cookie失效'+'\n')
 
-    print('【收益总计】🎉:'+str(data['user_total_money'])+'元'+'\n')
-    print('【剩余礼盒】🎉:'+ str(data['remain_num_76728']) + '个' +'\n')
-    return (data['remain_num_76728'])
-    print('【账户余额】🎉:'+str(data['user_current_money'])+'\n')
 
 
 
